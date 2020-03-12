@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php
+require 'vendor/autoload.php';
+require 'src/Kernel.php';
+require 'src/Model.php';
+require 'src/Cli.php';
+
+use Demolidor\Cli;
+
+new Cli(__DIR__);

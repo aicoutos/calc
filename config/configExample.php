@@ -1,0 +1,22 @@
+<?php
+return [
+    //DB
+    'db'=>[
+        'DB_NAME'=>'test',
+        'DB_TYPE'=>'mysql',
+        'DB_SERVER'=>'localhost',
+        'DB_USER'=>'root',
+        'DB_PASSWORD'=>''
+    ],
+    //LANGUAGE
+    'language'=>[
+        'available'=>['en','pt'],
+        'folders'=>['/app/view']
+    ],
+    //SITE
+    'site'=>[
+        'name'=>'Test',
+        'debug'=>true,
+        'url'=>'http://localhost'
+    ]
+];

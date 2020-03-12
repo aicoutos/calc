@@ -1,0 +1,36 @@
+@font-face {
+    /* https://www.keshikan.net/fonts-e.html */
+    font-family: 'DSEG7-Classic';
+    src: url('../fonts/DSEG7-Classic/DSEG7Classic-Bold.woff2') format('woff2'),
+    url('../fonts/DSEG7-Classic/DSEG7Classic-Bold.woff') format('woff'),
+    url('../fonts/DSEG7-Classic/DSEG7Classic-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+#botões{
+    background: #c0c0c0;
+    color:black;
+    text-align: center;
+    width: 100%;
+}
+#botões td{
+    border:1px solid white;
+    padding:1.25em 0;
+}
+#botões td:hover{
+    background: white;
+    cursor: pointer;
+}
+#display{
+    background-color:#fb7c00;
+    font-family: DSEG7-Classic;
+    font-size: 4em;
+    padding:0.25em 0;
+    text-align: center;
+    width: 100%;
+}
+@media ( max-width : 1300px) {
+    #display{
+        font-size:2.5em;
+    }
+}
