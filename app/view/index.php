@@ -55,3 +55,4 @@ require 'inc/header.php';
         </div>
     </div>
 </div>
+<script src="/js/main.js"></script>
