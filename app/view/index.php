@@ -8,7 +8,7 @@ require 'inc/header.php';
         </div>
         <div class="g4">
             <!-- https://www.keshikan.net/fonts-e.html -->
-            <div id="display">E</div>
+            <div id="display"></div>
             <table id="botões">
                 <tr>
                     <td>7</td>
@@ -29,7 +29,7 @@ require 'inc/header.php';
                     <td>/</td>
                 </tr>
                 <tr>
-                    <td>,</td>
+                    <td>.</td>
                     <td>0</td>
                     <td>=</td>
                     <td>x</td>

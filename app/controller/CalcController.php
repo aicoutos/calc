@@ -56,7 +56,6 @@ class CalcController extends Controller{
         }else{
             false;
         }
-
     }
 }
 ?>
