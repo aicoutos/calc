@@ -2,7 +2,7 @@ var a=false;
 var b=false;
 var mode='a';
 var op;
-$("#botões td").on("click",function(e){
+$("#buttons td").on("click",function(e){
     var str=$(this).html();
     processarEntrada(str);
 });
@@ -29,6 +29,7 @@ function appendToB(str){
 function exibirErro(){
     limparDisplay();
     exibirNoDisplay('E');
+    resetarTudo();
 }
 function exibirNoDisplay(str){
     $('#display').html(str);
@@ -73,19 +74,20 @@ function processarEntrada(str){
         if(str=='='){
             enviarProServidor(getA(),getB(),getOp());
         }else{
-            if(getMode()=='a'){
-                appendToA(str);
+            if($('#display').html().length==8){
+                exibirErro();
             }else{
-                appendToB(str);
+                if(getMode()=='a'){
+                    appendToA(str);
+                }else{
+                    appendToB(str);
+                }
             }
         }
     }
 }
 function enviarProServidor(a,b,op){
-    setA(false);
-    setB(false);
-    setOp(false);
-    setMode('a');
+    resetarTudo();
     var url='/calc?a='+a+'&b='+b+'&op='+op;
     $.getJSON( url, function( data ) {
         if(data.error==true){
@@ -95,6 +97,12 @@ function enviarProServidor(a,b,op){
             exibirNoDisplay(data.result);
         }
     });
+}
+function resetarTudo(){
+    setA(false);
+    setB(false);
+    setOp(false);
+    setMode('a');
 }
 function setA(str){
     a=str;

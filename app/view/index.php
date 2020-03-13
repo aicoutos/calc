@@ -9,7 +9,7 @@ require 'inc/header.php';
         <div class="g4">
             <!-- https://www.keshikan.net/fonts-e.html -->
             <div id="display"></div>
-            <table id="botões">
+            <table id="buttons">
                 <tr>
                     <td>7</td>
                     <td>8</td>

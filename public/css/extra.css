@@ -7,17 +7,17 @@
     font-weight: bold;
     font-style: normal;
 }
-#botões{
+#buttons{
     background: #c0c0c0;
     color:black;
     text-align: center;
     width: 100%;
 }
-#botões td{
+#buttons td{
     border:1px solid white;
     padding:1.25em 0;
 }
-#botões td:hover{
+#buttons td:hover{
     background: white;
     cursor: pointer;
 }
