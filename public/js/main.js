@@ -73,16 +73,12 @@ function processarEntrada(str){
     }else{
         if(str=='='){
             enviarProServidor(getA(),getB(),getOp());
+        }else if($('#display').html().length==8){
+            exibirErro();
+        }else if(getMode()=='a'){
+            appendToA(str);
         }else{
-            if($('#display').html().length==8){
-                exibirErro();
-            }else{
-                if(getMode()=='a'){
-                    appendToA(str);
-                }else{
-                    appendToB(str);
-                }
-            }
+            appendToB(str);
         }
     }
 }
