@@ -8,7 +8,7 @@ require 'inc/header.php';
         </div>
         <div class="g4">
             <!-- https://www.keshikan.net/fonts-e.html -->
-            <div id="display">-1234567</div>
+            <div id="display">E</div>
             <table id="botões">
                 <tr>
                     <td>7</td>

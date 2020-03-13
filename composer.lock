@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3b8b326f87d69de8e0ff83c3418c5013",
+    "content-hash": "63c3e25969ffc4d17e6f87d7b86dd8b2",
     "packages": [
         {
             "name": "catfan/medoo",
@@ -68,16 +68,16 @@
         },
         {
             "name": "demolidor/kernel",
-            "version": "v0.1.1",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/demolidor/kernel.git",
-                "reference": "ca2ba1535c8555523b6c1e59ef3064470706fa35"
+                "reference": "734e38946caa458f49a4065f4460c708e482d787"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/demolidor/kernel/zipball/ca2ba1535c8555523b6c1e59ef3064470706fa35",
-                "reference": "ca2ba1535c8555523b6c1e59ef3064470706fa35",
+                "url": "https://api.github.com/repos/demolidor/kernel/zipball/734e38946caa458f49a4065f4460c708e482d787",
+                "reference": "734e38946caa458f49a4065f4460c708e482d787",
                 "shasum": ""
             },
             "require": {
@@ -97,7 +97,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2020-03-06T12:44:05+00:00"
+            "time": "2020-03-13T18:56:50+00:00"
         },
         {
             "name": "phpmyadmin/motranslator",
@@ -600,9 +600,9 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": []

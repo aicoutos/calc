@@ -23,10 +23,12 @@
 }
 #display{
     background-color:#fb7c00;
+    display: block;
     font-family: DSEG7-Classic;
     font-size: 4em;
     padding:0.25em 0;
-    text-align: center;
+    text-align: left;
+    min-height: calc(102px - 0.5em);
     width: 100%;
 }
 @media ( max-width : 1300px) {
