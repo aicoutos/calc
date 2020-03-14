@@ -5,6 +5,7 @@ var op;
 $("#buttons td").on("click",function(e){
     var str=$(this).html();
     processarEntrada(str);
+    playSoundFx('/audio/button-35.mp3');
 });
 function appendToA(str){
     limparDisplay();
@@ -48,6 +49,32 @@ function getOp(){
 }
 function limparDisplay(){
     $('#display').html('');
+}
+function playSoundFx(sound){
+    var audio_element = document.createElement('audio');
+    var audiotypes={
+        "mp3": "audio/mpeg",
+        "mp4": "audio/mp4",
+        "ogg": "audio/ogg",
+        "wav": "audio/wav"
+    }
+    if (audio_element.canPlayType){
+        for (var i=0; i<arguments.length; i++){
+            var source_element = document.createElement('source');
+            source_element.setAttribute('src', arguments[i]);
+            if (arguments[i].match(/\.(\w+)$/i)){
+                source_element.setAttribute('type', audiotypes[RegExp.$1]);
+                audio_element.appendChild(source_element);
+            }
+        }
+        audio_element.load();
+        audio_element.playclip=function(){
+            audio_element.pause();
+            audio_element.currentTime=0;
+            audio_element.play();
+        }
+        return audio_element.playclip();
+    }
 }
 function processarEntrada(str){
     switch(str){
