@@ -7,6 +7,13 @@
     font-weight: bold;
     font-style: normal;
 }
+h1,h2{
+    text-align: center;
+}
+hr{
+    border: none;
+    border-top: 1px dashed #c0c0c0;
+}
 #buttons{
     background: #c0c0c0;
     color:black;
@@ -28,8 +35,31 @@
     font-size: 4em;
     padding:0.25em 0;
     text-align: left;
-    min-height: calc(102px - 0.5em);
+    min-height:1.1em;
     width: 100%;
+}
+/*http://tholman.com/github-corners/*/
+.github-corner:hover .octo-arm {
+	animation: octocat-wave 560ms ease-in-out
+}
+@keyframes octocat-wave {
+	0%,100% {
+		transform: rotate(0)
+	}
+	20%,60% {
+		transform: rotate(-25deg)
+	}
+	40%,80% {
+		transform: rotate(10deg)
+	}
+}
+@media (max-width:500px) {
+	.github-corner:hover .octo-arm {
+		animation: none
+	}
+	.github-corner .octo-arm {
+		animation: octocat-wave 560ms ease-in-out
+	}
 }
 /*botão toggle*/
 .switch {
@@ -38,13 +68,11 @@
   width: 60px;
   height: 34px;
 }
-
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
-
 .slider {
   position: absolute;
   cursor: pointer;
@@ -56,7 +84,6 @@
   -webkit-transition: .4s;
   transition: .4s;
 }
-
 .slider:before {
   position: absolute;
   content: "";
@@ -68,21 +95,17 @@
   -webkit-transition: .4s;
   transition: .4s;
 }
-
 input:checked + .slider {
   background-color: #2196F3;
 }
-
 input:focus + .slider {
   box-shadow: 0 0 1px #2196F3;
 }
-
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
-
 /* Rounded sliders */
 .slider.round {
   border-radius: 34px;
