@@ -2,10 +2,20 @@ var a=false;
 var b=false;
 var mode='a';
 var op;
+var somDoClick=true;
 $("#buttons td").on("click",function(e){
     var str=$(this).html();
     processarEntrada(str);
     playSoundFx('/audio/button-35.mp3');
+});
+$("#mute").on("click",function(e){
+    if($(this).is(":checked")){
+        setSomDoClick(true);
+        $('#lblMute').html('Som ativado:');
+    }else{
+        setSomDoClick(false);
+        $('#lblMute').html('Som desativado:');
+    }
 });
 function appendToA(str){
     limparDisplay();
@@ -47,6 +57,9 @@ function getMode(){
 function getOp(){
     return op;
 }
+function getSomDoClick(){
+    return somDoClick;
+}
 function limparDisplay(){
     $('#display').html('');
 }
@@ -68,12 +81,11 @@ function playSoundFx(sound){
             }
         }
         audio_element.load();
-        audio_element.playclip=function(){
+        if(getSomDoClick()){
             audio_element.pause();
             audio_element.currentTime=0;
             audio_element.play();
         }
-        return audio_element.playclip();
     }
 }
 function processarEntrada(str){
@@ -138,4 +150,7 @@ function setMode(str){
 }
 function setOp(str){
     op=str;
+}
+function setSomDoClick(bool){
+    somDoClick=bool;
 }

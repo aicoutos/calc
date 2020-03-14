@@ -35,6 +35,16 @@ require 'inc/header.php';
                     <td>x</td>
                 </tr>
             </table>
+            <br>
+            <center>
+                <label for="mute" id="lblMute">
+                    Som ativado:
+                </label>
+                <label class="switch">
+                    <input id="mute" type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </center>
         </div>
         <div class="g4">
             <h1>Calculadora Ajax</h1>
@@ -48,15 +58,15 @@ require 'inc/header.php';
                     </a>
                 </li>
                 <li>
-                    Framework:
-                    <a href="https://demolidor.github.io/" target="_blank">
-                        Demolidor
+                    Fonte do display:
+                    <a href="https://www.keshikan.net/fonts-e.html" target="_blank">
+                        DSEG
                     </a>
                 </li>
                 <li>
-                    Fonte:
-                    <a href="https://www.keshikan.net/fonts-e.html" target="_blank">
-                        DSEG
+                    Framework:
+                    <a href="https://demolidor.github.io/" target="_blank">
+                        Demolidor
                     </a>
                 </li>
             </ul>
