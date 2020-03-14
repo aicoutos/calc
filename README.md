@@ -1,9 +1,8 @@
-# demolidor
+# Calculadora Ajax
 
-## install
-```bash
-composer create-project --prefer-dist demolidor/demolidor blog
-```
+Interface simples de calculadora com processamento no back-end (PHP).
 
-## autorouting
-![REST](rest.png)
+## Créditos:
+- Efeito sonoro: [Sound Jay](https://www.soundjay.com/)
+- Framework: [Demolidor](https://demolidor.github.io/)
+- Fonte: [DSEG](https://www.keshikan.net/fonts-e.html)

@@ -39,17 +39,25 @@ require 'inc/header.php';
         <div class="g4">
             <h1>Calculadora Ajax</h1>
             <p>Interface simples de calculadora com processamento no back-end (PHP).</p>
-            <h2>Feito com:</h2>
+            <h2>Créditos:</h2>
             <ul>
                 <li>
-                    <a href="https://demolidor.github.io/" target="_blank">
-                        Demolidor
-                    </a> (framework)
+                    Efeito sonoro:
+                    <a href="https://www.soundjay.com/" target="_blank">
+                        Sound Jay
+                    </a>
                 </li>
                 <li>
+                    Framework:
+                    <a href="https://demolidor.github.io/" target="_blank">
+                        Demolidor
+                    </a>
+                </li>
+                <li>
+                    Fonte:
                     <a href="https://www.keshikan.net/fonts-e.html" target="_blank">
                         DSEG
-                    </a> (fonte)
+                    </a>
                 </li>
             </ul>
         </div>
