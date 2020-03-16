@@ -5,8 +5,8 @@ var op;
 var somDoClick=true;
 $("#buttons td").on("click",function(e){
     var str=$(this).html();
-    processarEntrada(str);
     playSoundFx('/audio/button-35.mp3');
+    processarEntrada(str);
 });
 $("#mute").on("click",function(e){
     if($(this).is(":checked")){
