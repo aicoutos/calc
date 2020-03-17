@@ -1,8 +1,14 @@
 {
     "name": "demolidor/demolidor",
     "license": "MIT",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/demolidor/kernel.git"
+        }
+    ],
     "require": {
-        "demolidor/kernel": "v0.2.1"
+        "demolidor/kernel": "v0.3.3"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

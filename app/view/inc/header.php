@@ -4,7 +4,12 @@
     <meta charset="utf-8">
     <title><?php print $SITE['name']; ?></title>
     <!-- CSS -->
-    <link rel="stylesheet" href="<?php print $SITE['url']; ?>/css/master.css">
-    <link rel="stylesheet" href="<?php print $SITE['url']; ?>/css/extra.css">
+    <?php
+    $this->asset([
+        '/css/master.css',
+        '/css/extra.css',
+        '/js/jquery.min.js'
+    ]);
+    ?>
 </head>
 <body>
