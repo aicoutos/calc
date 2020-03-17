@@ -7,8 +7,7 @@
     <?php
     $this->asset([
         '/css/master.css',
-        '/css/extra.css',
-        '/js/jquery.min.js'
+        '/css/extra.css'
     ]);
     ?>
 </head>

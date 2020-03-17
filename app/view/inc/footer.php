@@ -1,4 +1,7 @@
 <!-- JS -->
 <?php
-$this->asset('/js/main.js');
+$this->asset([
+    '/js/jquery.min.js',
+    '/js/main.js'
+],false);
 ?>

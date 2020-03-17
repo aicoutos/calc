@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-        "demolidor/kernel": "v0.3.3"
+        "demolidor/kernel": "v0.3.4"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
