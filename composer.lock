@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "30978189c5020c92c06d6de006e9a6d4",
+    "content-hash": "9ff057ee6c88b57173e50c7538483d6b",
     "packages": [
         {
             "name": "catfan/medoo",
@@ -68,11 +68,11 @@
         },
         {
             "name": "demolidor/kernel",
-            "version": "v0.3.4",
+            "version": "v0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/demolidor/kernel.git",
-                "reference": "1927dfe3d5e7194168e5f27d7f1a1dff0713b145"
+                "reference": "48e20ca379129e1b615c8e57989375948913c80d"
             },
             "require": {
                 "catfan/medoo": "^1.7",
@@ -90,7 +90,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2020-03-17T12:43:06+00:00"
+            "time": "2020-03-17T12:58:52+00:00"
         },
         {
             "name": "phpmyadmin/motranslator",

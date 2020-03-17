@@ -8,7 +8,7 @@ class CalcController extends Controller{
         $a=@$_GET['a'];
         $b=@$_GET['b'];
         $op=@$_GET['op'];//mul,add,sub,div
-        if($this->validInput($a,$b,$op)){
+        if($this->validInput($a,$b,$op) && $this->isAjax()){
             switch ($op) {
                 case 'add':
                 $result=bcadd($a,$b);
