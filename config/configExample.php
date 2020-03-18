@@ -17,6 +17,7 @@ return [
     'site'=>[
         'name'=>'Test',
         'debug'=>true,
+        'online'=>true,
         'url'=>'http://localhost'
     ]
 ];

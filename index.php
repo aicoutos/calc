@@ -9,4 +9,8 @@ use Demolidor\Kernel;
 
 $Demolidor=new Kernel();
 $Demolidor->setRoot(__DIR__);
-$Demolidor->autoRouting();
+if($Demolidor->isOn()){
+    $Demolidor->autoRouting();
+}else{
+    die("maintenance mode");
+}
